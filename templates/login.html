@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">تسجيل الدخول</h2>
+        <form action="/login" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="username">اسم المستخدم</label>
+                <input type="text" class="form-control" id="username" name="username" 
+                       pattern="^[a-zA-Z0-9]{3,15}$" 
+                       title="يجب أن يكون اسم المستخدم من 3 إلى 15 حرفًا (أحرف وأرقام فقط)" required>
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" class="form-control" id="password" name="password" 
+                       pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" 
+                       title="يجب أن تحتوي كلمة المرور على 8 أحرف على الأقل، حرف كبير واحد ورقم واحد" required>
+            </div>
+            <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+        </form>
+    </div>
+</body>
+</html>

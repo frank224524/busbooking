@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Bus</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Book a Bus</h1>
+    <form method="POST">
+        Name: <input type="text" name="name" required><br>
+        Bus Number: <input type="text" name="bus_number" required><br>
+        Date: <input type="date" name="date" required><br>
+        <input type="submit" value="Book">
+    </form>
+    <a href="/">Back to Bookings</a>
+</body>
+</html>
