@@ -5,7 +5,7 @@ from src.logger import setup_logger
 #frankhi
 logger = setup_logger()
 app = Flask(__name__)
-@dhffcgfjh
+#dhffcgfjh
 @app.before_first_request
 def initialize():
     try:
